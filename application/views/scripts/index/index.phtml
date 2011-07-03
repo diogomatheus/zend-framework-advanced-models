@@ -1,0 +1,8 @@
+<?php if($this->message): ?>
+<h4><?php echo $this->message; ?></h4>
+<?php endif; ?>
+
+<h3>Lista de usuários</h3>
+<?php foreach($this->users as $user): ?>
+<p><?php echo $user->getName(); ?> - <?php echo $user->getEmail(); ?></p>
+<?php endforeach; ?>
